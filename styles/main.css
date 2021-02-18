@@ -18,7 +18,7 @@ header {
     height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;   
 }
 
@@ -41,7 +41,7 @@ header {
 
 .search-bar input{
     width: 40em;
-    height: 2.5em;
+    height: 30px;
     border: none;
 }
 
