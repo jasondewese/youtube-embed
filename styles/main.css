@@ -1,3 +1,70 @@
 body {
-    background-color: #222;
+    background-color: #EEE;
+    color: #222;
+}
+
+header {
+    background-color: #AAA;
+    height: 50px;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.container {
+    display: grid;
+    margin-top: 50px;
+    margin-left: 150px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 100px auto;
+    grid-template-areas: 
+    "video sidebar"
+    "details sidebar"
+    "comments sidebar";
+}
+
+main {
+    background-color: #DAA;
+    
+    grid-area: video;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.details {
+    background-color: #ADA;
+    grid-area: details;
+}
+
+.comments {
+    background-color: #AAD;
+    grid-area: comments;
+}
+
+.sidebar {
+    background-color: azure;
+    grid-area: sidebar;
 }
