@@ -1,7 +1,8 @@
 body {
     background-color: #DDD;
-    color: #222;
+    color: #555;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 /*Navbar styling ****************************************/
@@ -56,15 +57,16 @@ header {
 }
 
 .nav-buttons:hover {
-    background-color: #CCC;
+    /*background-color: #CCC;*/
+    opacity: 0.6;
 }
 /*End Navbar styling****************************************/
 
-
+/*Video Section Styling***************************************/
 .container {
     display: grid;
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 50px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 100px auto;
     grid-template-areas: 
@@ -104,12 +106,61 @@ main {
     grid-area: details;
 }
 
+/*End Video Section Styling***********************************/
+
+
+/*Comment section styling*************************************/
 .comments {
     background-color: #AAD;
     grid-area: comments;
 }
+/*End comment section styling*********************************/
 
+/*Sidebar styling*********************************************/
 .sidebar {
     background-color: #EEE;
     grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    
 }
+
+.suggestion {
+    padding-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    word-wrap: normal;
+}
+
+.suggestion-title {
+    font-weight: bold;
+    padding-top: 1.5em;
+    color: #222;
+}
+
+.thumbnail {
+    display: block;
+    float: left;
+    padding-right: 10px;
+}
+
+.suggestion-filter {
+    margin: 8px 15px;
+}
+
+.suggestion-buttons {
+    background-color: #DDD;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.suggestion-buttons:hover {
+    background-color: #CCC;
+}
+
+.live-video{
+    color: red; 
+}
+/*End sidebar styling***************************/
