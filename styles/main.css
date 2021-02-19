@@ -1,5 +1,5 @@
 body {
-    background-color: #DDD;
+    background-color: #F8F8F8;
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -7,7 +7,7 @@ body {
 
 /*Navbar styling ****************************************/
 header {
-    background-color: #F2F2F2;
+    background-color: #FDFDFD;
     height: 50px;
     position: fixed;
     top: 0;
@@ -68,16 +68,22 @@ header {
     margin-top: 50px;
     margin-left: 50px;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto 100px auto;
+    grid-template-rows: max-content max-content auto;
     grid-template-areas: 
     "video sidebar"
     "details sidebar"
     "comments sidebar";
+    
 }
 
 main {
-    background-color: #DAA;
+    background-color: #F8F8F8;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+    border-bottom-width: 2px;
     grid-area: video;
+    height: 100%
+    
 }
 
 .video-container {
@@ -86,6 +92,7 @@ main {
     padding-top: 35px;
     height: 0;
     overflow: hidden;
+    
 }
 
 .video-container iframe {
@@ -93,32 +100,90 @@ main {
     top:0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%;  
 }
 
 .video-title {
     font-size:1.5em;
-    margin-bottom:1em; 
+    margin-bottom:1em;
+    padding-top:1em;
+    color: #222;
 }
 
-.details {
-    background-color: #ADA;
-    grid-area: details;
+.video-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+.data-and-buttons{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.data-icons {
+    opacity: 0.5;
+    width: 1.5em;
+    margin: 0px 1em;
+}
+.data-icons:hover {
+    opacity: 0.8;
 }
 
 /*End Video Section Styling***********************************/
 
+/*Channel and video details***********************************/
+.details {
+    background-color: #F8F8F8;
+    grid-area: details;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+    border-bottom-width: 2px;
+    display: flex;
+    line-height: 1.5;
+}
+
+.channel-icon {
+    width: 40px;
+    display: block;
+    float: left;
+    padding-right: 10px;
+    margin-top: 15px;
+}
+.description-text {
+    color: #222;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.channel-title {
+    font-weight: bold;
+    padding-top: 1.5em;
+    color: #222;
+    font-size: 16px;
+}
+.show-more{
+    width: 10em;
+}
+.show-more:hover {
+    color: #222;
+}
+/**********************************************************/
+
 
 /*Comment section styling*************************************/
 .comments {
-    background-color: #AAD;
+    background-color: #F8F8F8;
     grid-area: comments;
+    margin-top: 10px;
 }
 /*End comment section styling*********************************/
 
 /*Sidebar styling*********************************************/
 .sidebar {
-    background-color: #EEE;
+    background-color: #F8F8F8;
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
