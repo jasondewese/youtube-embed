@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>YouTube Embed Project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
     <script charset="utf-8" src="scripts/main.js" defer></script>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -19,8 +19,8 @@
                    
                 </li>
                 <li>
-                    <div class="youtube-logo">
-                        <img class="nav-buttons" width="30px" src="media/images/header/youtube-brands.svg" alt="YouTube Logo">
+                    <div class="youtube-logo-box">
+                        <img class="nav-buttons youtube-logo" width="30px" src="media/images/header/youtube-brands.svg" alt="YouTube Logo">
                         <h1>Youtube</h1>
                     </div>  
                 </li>
@@ -99,14 +99,92 @@
             </div>
             
         </section>
-        <section class="comments">
-            Comments
-            <!--These are just sample comment divs for initial -->
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </section>
+        <section class="comment-section">
+            <div class="comment-label">
+                <p class="comment-count">17 Comments</p>
+                <img class="data-icons" src="media/images/details/sort-amount-down-solid.svg">
+                <p>SORT BY</p>
+            </div>
+            <div class="add-comment">
+                <img class="user-icon" src="media/images/header/user-circle-solid.svg">
+                <p>Add a public comment</p>
+            </div>
+            <div class="comment"> 
+                <img class="user-icon" src="media/images/header/user-circle-solid.svg">
+                <div class="comment-wrapper">     
+                    <p class="channel-title">Wing N.</p>
+                    <p>3 years ago (edited)</p>
+                    <p>"use your powers for good" haha<br>
+                        thank you for the video.
+                    </p>
+                    
+                    <div class="comment-likes">
+                        <img class="data-icons comment-like-icon" src="media/images/details/thumbs-up-solid.svg">
+                        <div>458</div>
+                        <img class="data-icons comment-dislike-icon" src="media/images/details/thumbs-down-solid.svg">
+                        <div>1</div>
+                        <p class="reply-button">REPLY</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="comment"> 
+                <img class="user-icon" src="media/images/header/user-circle-solid.svg">
+                <div class="comment-wrapper">     
+                    <p class="channel-title">Chritine Fredrickson</p>
+                    <p>5 months ago</p>
+                    <p>Thanks so much! This video was really helpful and to the point.
+                    </p>
+                    
+                    <div class="comment-likes">
+                        <img class="data-icons comment-like-icon" src="media/images/details/thumbs-up-solid.svg">
+                        <div></div>
+                        <img class="data-icons comment-dislike-icon" src="media/images/details/thumbs-down-solid.svg">
+                        <div></div>
+                        <p class="reply-button">REPLY</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="comment"> 
+                <img class="user-icon" src="media/images/header/user-circle-solid.svg">
+                <div class="comment-wrapper">     
+                    <p class="channel-title">Fer Del Valle</p>
+                    <p>1 years ago</p>
+                    <p>Awesome, thanks
+                    
+                    <div class="comment-likes">
+                        <img class="data-icons comment-like-icon" src="media/images/details/thumbs-up-solid.svg">
+                        <div></div>
+                        <img class="data-icons comment-dislike-icon" src="media/images/details/thumbs-down-solid.svg">
+                        <div></div>
+                        <p class="reply-button">REPLY</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="comment"> 
+                <img class="user-icon" src="media/images/header/user-circle-solid.svg">
+                <div class="comment-wrapper">     
+                    <p class="channel-title">andrewscheurmann05</p>
+                    <p>6 years ago</p>
+                    <p>FYI: the edit button has changed to a diagonal pencil
+                    </p>
+                    
+                    <div class="comment-likes">
+                        <img class="data-icons comment-like-icon" src="media/images/details/thumbs-up-solid.svg">
+                        <div>1</div>
+                        <img class="data-icons comment-dislike-icon" src="media/images/details/thumbs-down-solid.svg">
+                        <div></div>
+                        <p class="reply-button">REPLY</p>
+                    </div>
+                </div> 
+            </div>
+
+            
+
+            </section>
+
         <section class="sidebar">
             <div class="suggestion">
                 <img class="thumbnail" src="media/images/sidebar/Thumbnail1.png">
