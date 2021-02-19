@@ -328,4 +328,13 @@ main {
     .video-data > p {
         padding-bottom: 5px;
     }
+    .details {
+        height: 20em;
+    }
+    .comment-label{
+        height:2em;
+    }
+    .comment {
+        height: 8em;
+    }
 }
