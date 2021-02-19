@@ -338,3 +338,16 @@ main {
         height: 8em;
     }
 }
+
+/*Adapt landscape mode on mobile phone*/
+@media (max-height: 450) {
+    .details {
+        height: 20em;
+    }
+    .comment-label{
+        height:2em;
+    }
+    .comment {
+        height: 8em;
+    }
+}
