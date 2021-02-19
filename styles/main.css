@@ -340,7 +340,7 @@ main {
 }
 
 /*Adapt landscape mode on mobile phone*/
-@media (max-height: 450) {
+@media (max-height: 450px) {
     .details {
         height: 20em;
     }
